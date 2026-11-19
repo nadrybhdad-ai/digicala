@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: taha;
+  src: url("../../fonts/IRANYekanWeb.woff2") format('woff2');
+  src: url("../../fonts/IRANYekanWeb.woff") format('woff');
+  src: url("../../fonts/IRANYekanWeb.ttf") format('ttf');
+  src: url("../../fonts/IRANYekanWeb.eot") format('eot');
+}
+
+:root {
+  --loginWidth: 400px;
+  --mainColor: #ef4056;
+  --textColor: #3f4064;
+  --greyColor: #81858b;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: taha;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,169 @@
+/* ========================================== */
+/* استایل مشترک کانتینرها */
+/* ========================================== */
+.ranking-section {
+  width: 95%;
+  margin: 40px auto;
+  border: 1px solid #e0e0e2;
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+  direction: rtl;
+}
+
+/* ========================================== */
+/* بخش اول: پرفروش‌ترین‌ها (گرید ۴ ستونی) */
+/* ========================================== */
+.ranking-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.ranking-header h2 {
+  font-family: iranYekan;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0c0c0c;
+  margin: 0;
+}
+
+.ranking-header svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ساختار گرید ۴ ستونی و ۳ ردیفه */
+.ranking-grid-4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* ۴ ستون */
+  gap: 30px 20px; /* فاصله عمودی ۳۰ و افقی ۲۰ */
+}
+
+/* استایل هر آیتم در گرید */
+.ranking-grid-4-cols .rank-item {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: flex-start;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.ranking-grid-4-cols .rank-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.ranking-grid-4-cols .rank-num {
+  width: 24px;
+  height: 24px;
+  background-color: #ef4056;
+  color: white;
+  font-family: iranYekan;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ranking-grid-4-cols .rank-text {
+  flex: 1;
+  font-family: iranYekan;
+  font-size: 13px;
+  color: #3f4064;
+  line-height: 1.8;
+  margin: 0;
+  text-align: right; 
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ranking-title { 
+  font-family: iranYekan; 
+  font-size: 20px; 
+  font-weight: 700;
+  margin-top: 0; 
+  margin-bottom: 20px; 
+}
+
+.ranking-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.ranking-grid .rank-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.rank-right { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.ranking-grid .rank-num {
+  font-family: iranYekan;
+  font-size: 24px;
+  background: none;
+  color: #ef4056;
+  font-weight: bold;
+  width: auto;
+  height: auto;
+}
+
+.rank-right img { 
+  width: 80px; 
+  height: 80px; 
+  object-fit: contain; 
+}
+
+.ranking-grid .rank-text { 
+  font-family: iranYekan; 
+  font-size: 13px; 
+  line-height: 1.5; 
+  margin: 0; 
+}
+
+.ranking-section {
+  position: relative; 
+  padding-left: 60px !important; 
+}
+
+.ranking-arrow-left {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #e0e0e2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.ranking-arrow-left svg {
+  width: 24px;
+  height: 24px;
+}

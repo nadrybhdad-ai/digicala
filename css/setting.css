@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: iranYekan;
+  src: url("../fonts/IRANYekanWeb.woff2") format("woff2"),
+       url("../fonts/IRANYekanWeb.woff") format("woff"),
+       url("../fonts/IRANYekanWeb.ttf") format("truetype"),
+       url("../fonts/IRANYekanWeb.eot");
+  font-display: swap;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+:root {
+  --headerHeight: 170px;
+}
+
+::-webkit-scrollbar {
+  background-color: #e7e6e6;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a3a3a3;
+  border-radius: 20px;
+}

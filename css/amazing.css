@@ -1,0 +1,205 @@
+.amazing-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .amazing {
+    width: 95%;
+    height: 100%;
+    background: linear-gradient(225deg, rgb(210, 44, 78) 0%, rgb(238, 56, 78) 100%);
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 20px;
+    padding: 20px 20px 20px 0px;
+
+    .main {
+      width: 15%;
+      height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 30px;
+
+      .smile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 40%;
+        }
+      }
+
+      .title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 80%;
+        }
+      }
+
+      .more {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+          all: unset;
+          padding: 10px 20px;
+          color: black;
+          font-family: iranYekan;
+          font-size: 13px;
+          border-radius: 10px;
+          cursor: pointer;
+          background-color: #e8e9eb;
+          transition: 300ms;
+          
+          &:hover {
+            background-color: #d1d3d6;
+          }
+        }
+      }
+    }
+
+    .amazing-slider {
+      width: 85%;
+      height: 100%;
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px 15px 10px;
+        box-sizing: border-box;
+        height: 100%;
+
+        .image {
+          width: 100%;
+          height: 120px; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 5px;
+          
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+          }
+        }
+
+        .description {
+          width: 100%;
+          font-size: 13px;
+          font-family: iranYekan;
+          color: #4b4b4b;
+          text-align: right;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          margin-bottom: 8px;
+        }
+
+        .oldPrice {
+          width: 100%;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: end;
+          align-items: center;
+          gap: 6px;
+          margin-bottom: 5px;
+
+          .discount {
+            padding: 2px 8px;
+            background-color: crimson;
+            border-radius: 30px;
+            font-family: iranYekan;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+          }
+
+          .amount {
+            font-family: iranYekan;
+            font-size: 12px;
+            color: gray;
+            text-decoration: line-through;
+            text-decoration-color: gray;
+            text-decoration-thickness: 1px;
+          }
+        }
+
+        .price {
+          width: 100%;
+          font-family: iranYekan;
+          font-weight: bold;
+          font-size: 16px;
+          color: #0c0c0c;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: end;
+          align-items: center;
+          gap: 6px;
+
+          svg {
+            width: 16px;
+            height: 16px;
+            fill: #424750;
+          }
+        }
+
+        &.more-slide {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+
+          .icon {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 40%;
+              border: 1px solid lightgray;
+              padding: 10px;
+              border-radius: 50%;
+            }
+          }
+
+          .title {
+            color: black;
+            font-family: iranYekan;
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+
+        &.border-right-top-and-bottom-radius {
+          border-bottom-right-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+
+        &.border-left-top-and-bottom-radius {
+          border-bottom-left-radius: 10px;
+          border-top-left-radius: 10px;
+        }
+      }
+    }
+  }
+}

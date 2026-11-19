@@ -1,0 +1,36 @@
+.story-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+
+  .story {
+    width: 95%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    .story-item {
+      width: 15%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: start;
+      align-items: center;
+      gap: 20px;
+
+      .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 65px;
+        }
+      }
+
+      .title {
+        font-family: iranYekan;
+        font-size: 14px;
+      }
+    }
+  }
+}

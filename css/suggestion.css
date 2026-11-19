@@ -1,0 +1,160 @@
+/* کانتینر اصلی بخش پیشنهاد ما */
+.suggestion-section {
+  width: 95%;
+  margin: 40px auto;
+  background: #fff;
+  border: 1px solid #e0e0e2;
+  border-radius: 15px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.suggestion-title {
+  font-family: iranYekan;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0c0c0c;
+  padding: 0 25px;
+  margin-bottom: 25px;
+}
+
+/* گرید ۴ ستونی */
+.suggestion-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* استایل هر کارت */
+.suggestion-card {
+  padding: 20px 20px 25px 20px;
+  border-left: 1px solid #e0e0e2; /* خط جداکننده عمودی */
+  border-bottom: 1px solid #e0e0e2; /* خط جداکننده افقی برای ردیف‌های بعدی */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* حذف خط عمودی از آخرین ستونِ هر ردیف */
+.suggestion-card:nth-child(4n) {
+  border-left: none;
+}
+
+/* حذف خط افقی از ردیف آخر */
+.suggestion-card:nth-last-child(-n+4) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* بخش بالای کارت (فروش ویژه) */
+.s-top {
+  height: 20px;
+  text-align: right;
+}
+
+.s-badge {
+  color: #ef4056;
+  font-family: iranYekan;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* عکس محصول */
+.s-img {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 15px 0;
+  text-decoration: none;
+}
+
+.s-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+.s-title {
+  font-family: iranYekan;
+  font-size: 14px;
+  color: #3f4064;
+  line-height: 1.8;
+  height: 50px; 
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.s-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: iranYekan;
+  font-size: 13px;
+  color: #3f4064;
+  margin-bottom: 10px;
+}
+
+.s-rating svg {
+  width: 16px;
+  height: 16px;
+  fill: #f5a623;
+}
+
+
+.s-stock {
+  font-family: iranYekan;
+  font-size: 12px;
+  color: #ef4056;
+  margin-bottom: 10px;
+}
+
+.s-price-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto; 
+}
+
+.s-price-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+.s-new-price {
+  font-family: iranYekan;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0c0c0c;
+}
+
+.s-new-price span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #3f4064;
+}
+
+.s-old-price {
+  font-family: iranYekan;
+  font-size: 12px;
+  color: #a0a0a0;
+  text-decoration: line-through;
+  margin-top: 4px;
+}
+
+
+.s-discount {
+  background: #ef4056;
+  color: #fff;
+  font-family: iranYekan;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 15px;
+}
